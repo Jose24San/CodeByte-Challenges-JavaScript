@@ -17,7 +17,6 @@ function FirstFactorial(num) {
 
         }
 
-        // code goes here
         return multiplier;
     }
 
