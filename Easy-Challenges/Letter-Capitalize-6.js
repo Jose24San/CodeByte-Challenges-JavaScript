@@ -12,13 +12,13 @@
 
 
 function LetterCapitalize(str) {
-    var stringOfArrays = str.split(" ");
+    var arraysOfStrings = str.split(" ");
     var finalArray = [];
     var temp;
 
-    for(var i = 0; i < stringOfArrays.length; i++) {
+    for(var i = 0; i < arraysOfStrings.length; i++) {
 
-        temp = stringOfArrays[i][0].toUpperCase() + stringOfArrays[i].substring(1);
+        temp = arraysOfStrings[i][0].toUpperCase() + arraysOfStrings[i].substring(1);
         finalArray.push( temp );
     }
 
