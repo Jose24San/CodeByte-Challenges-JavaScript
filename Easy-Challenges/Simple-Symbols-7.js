@@ -11,10 +11,15 @@
  Output:"false"
 */
 
-
-function SimpleSymbols(str) {
-
-    // code goes here
-    return str;
-
+function SimpleSymbols(string) { 
+	
+	//check to see if a lowercase or captial letter has a "+" symbol before it "or" if a lowercase or capital letter has a "+" after it. If either of those two case are true then return true. Before return the value I then invert it with the ! so that its returning true and false for the test cases written above. 
+	return ! /(^|[^+])[a-zA-Z]|[a-zA-Z]([^+]|$)/g.test(string);
+         
 }
+   
+// keep this function call here 
+SimpleSymbols(readline());                            
+
+                           
+  
